@@ -4,6 +4,7 @@ $title-font: 50px;
 $title-weight: bolder;
 $sub-title: 30px;
 $sub-title-weight: medium;
+$phone-breakpoint:480px;
 
 body {
   top: 0;
@@ -358,6 +359,7 @@ hr {
   gap: 20px;
   width: 100%;
   height: 500px;
+  margin-bottom: 150px;
 
   .description-content {
     display: flex;
@@ -370,7 +372,7 @@ hr {
 
     .card {
       width: 300px;
-      height: 300px;
+      height: 400px;
       padding: 20px;
       background: #f1e6c5;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -399,14 +401,27 @@ hr {
       ul {
         list-style: none;
         padding: 0;
+        width: 90%;
 
         li {
           display: flex;
           align-items: center;
+          justify-content: center;
           gap: 10px;
           font-size: 16px;
           padding: 10px 0;
           line-height: 1.4;
+          width: 100%;
+        
+          label{
+            height: 100%;
+            width: 100%;
+            &:last-child{
+              display: flex;
+              justify-content: end;
+            }
+          }
+     
         }
 
         i {
@@ -450,5 +465,53 @@ hr {
   transition: all .3s;
 }
 
-}
+ .faq {
+   padding: 2rem;
+   background-color: #F2E8C6;
 
+   h3 {
+     text-align: center;
+     font-size: 2rem;
+     margin-bottom: 2rem;
+     color: #000000;
+   }
+
+   .faq-content {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+     gap: 20px;
+
+     @media (max-width: $phone-breakpoint) {
+       grid-template-columns: 1fr;
+     }
+
+     .faq-item {
+       background: #ffffff;
+       border-radius: 16px;
+       padding: 20px;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+
+       strong {
+         display: block;
+         margin-bottom: 0.5rem;
+         font-weight: bold;
+         font-size: 1.2rem;
+         color: #333;
+       }
+
+       p {
+         margin: 0;
+         font-size: 1rem;
+         color: #666;
+       }
+
+       &:last-child {
+         margin-bottom: 0;
+       }
+     }}}
+    }

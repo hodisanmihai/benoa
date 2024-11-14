@@ -312,6 +312,7 @@ body .description {
   gap: 20px;
   width: 100%;
   height: 500px;
+  margin-bottom: 150px;
 }
 body .description .description-content {
   display: flex;
@@ -324,7 +325,7 @@ body .description .description-content {
 }
 body .description .description-content .card {
   width: 300px;
-  height: 300px;
+  height: 400px;
   padding: 20px;
   background: #f1e6c5;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -351,14 +352,25 @@ body .description .description-content .card .card-title {
 body .description .description-content .card ul {
   list-style: none;
   padding: 0;
+  width: 90%;
 }
 body .description .description-content .card ul li {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   font-size: 16px;
   padding: 10px 0;
   line-height: 1.4;
+  width: 100%;
+}
+body .description .description-content .card ul li label {
+  height: 100%;
+  width: 100%;
+}
+body .description .description-content .card ul li label:last-child {
+  display: flex;
+  justify-content: end;
 }
 body .description .description-content .card ul i {
   color: #ff6f00;
@@ -391,4 +403,50 @@ body .container .checkmark {
   border: 2px solid #32cd32;
   border-radius: 4px;
   transition: all 0.3s;
+}
+body .faq {
+  padding: 2rem;
+  background-color: #F2E8C6;
+}
+body .faq h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #000000;
+}
+body .faq .faq-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 20px;
+}
+@media (max-width: 480px) {
+  body .faq .faq-content {
+    grid-template-columns: 1fr;
+  }
+}
+body .faq .faq-content .faq-item {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .faq .faq-content .faq-item strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+body .faq .faq-content .faq-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+body .faq .faq-content .faq-item:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
