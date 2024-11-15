@@ -55,7 +55,7 @@ body .hero .hero-content .top-content {
   justify-content: space-around;
 }
 body .hero .hero-content .top-content .logo {
-  background: url("../images/favicon.ico");
+  background: url("/images/favicon.ico");
   width: 150px;
   aspect-ratio: 3/2;
   background-position: center;
