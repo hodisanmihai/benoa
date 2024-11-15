@@ -6,6 +6,9 @@ $sub-title: 30px;
 $sub-title-weight: medium;
 $phone-breakpoint:480px;
 
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
