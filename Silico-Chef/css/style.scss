@@ -6,20 +6,21 @@ $sub-title: 30px;
 $sub-title-weight: medium;
 $phone-breakpoint:480px;
 
-html{
-  scroll-behavior: smooth;
-}
 
 body {
-  top: 0;
   margin: 0;
   font-family: 'Outfit';
+  overflow-x: hidden;
+  padding: 0;
   width: 100vw;
-  overflow-x: hidden  ;
+
+  main{
+    overflow: hidden;
+    width: 100%;
 
   .hero {
     position: relative;
-    width: 100%;
+    width: 100dvw;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -731,6 +732,5 @@ body {
       }
     }
     
-    
-
-    }
+  }
+  }
