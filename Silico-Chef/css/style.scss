@@ -19,7 +19,7 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('../images/backgroundtop.jpg');
+    background-image: url('/images/backgroundtop.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -635,7 +635,7 @@ body {
             }
 
             .logo-image{
-              background-image: url('./images/favicon.ico');
+              background-image: url('../images/favicon.ico');
               width:50%;
               height:auto;
               aspect-ratio: 1 / 1 ;
