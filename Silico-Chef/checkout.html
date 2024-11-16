@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular de Contact</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your compiled SCSS -->
+</head>
+<body>
+    <div class="contact-container">
+        <form class="contact-form" action="/submit" method="POST">
+            <h2>Comanda acum!</h2>
+
+            <label for="nume">Nume:</label>
+            <input type="text" id="nume" name="nume" required><br><br>
+
+            <label for="prenume">Prenume:</label>
+            <input type="text" id="prenume" name="prenume" required><br><br>
+
+            <label for="telefon">Număr de Telefon:</label>
+            <input type="tel" id="telefon" name="telefon" required><br><br>
+
+            <label for="oras">Oraș:</label>
+            <input type="text" id="oras" name="oras" required><br><br>
+
+            <label for="judet">Județ:</label>
+            <input type="text" id="judet" name="judet" required><br><br>
+
+            <label for="strada">Strada:</label>
+            <input type="text" id="strada" name="strada" required><br><br>
+
+            <label for="numarCasa">Număr Casă:</label>
+            <input type="number" id="numarCasa" name="numarCasa" required><br><br>
+
+            <h3>Detalii Produs</h3>
+
+            <div class="radio-input">
+                <label class="reveal">
+                    <input value="1 bucata 50 RON" name="productOption" id="option-1" type="radio" />
+                    <span>1 bucata 50 RON</span>
+                </label>
+                <label class="reveal">
+                    <input value="2 bucati 70 RON" name="productOption" id="option-2" type="radio" />
+                    <span>2 bucati 70 RON</span>
+                </label>
+                <label class="reveal">
+                    <input value="2+1 bucati 90 RON" name="productOption" id="option-3" type="radio" />
+                    <span>2+1 bucati 90 RON</span>
+                </label>
+            </div>
+
+            <button type="submit">Comandă Acum!</button>
+        </form>
+    </div>
+</body>
+</html>
